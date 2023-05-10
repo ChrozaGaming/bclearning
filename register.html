@@ -2,31 +2,90 @@
 <html>
 <head>
     <title>Form Registrasi Siswa</title>
-</head>
-<body>
-<h1>Form Registrasi Siswa</h1>
-<form action="proses_register.php" method="post">
-    <label for="nama">Nama:</label>
-    <input type="text" name="nama" required><br><br>
-    <label for="email">Email:</label>
-    <input type="email" name="email" required><br><br>
-    <label for="password">Password:</label>
-    <input type="password" name="password" required><br><br>
-    <label for="no_telepon">No. Telepon:</label>
-    <input type="text" name="no_telepon"><br><br>
-    <label for="alamat">Alamat:</label>
-    <textarea name="alamat"></textarea><br><br>
-    <label for="tingkat_kelas">Tingkat Kelas:</label>
-    <select name="tingkat_kelas">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type=text], input[type=email], input[type=password], select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            margin: auto;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        .success {
+            color: green;
+            margin-bottom: 10px;
+        }
+        </style>
+
+        </head>
+        <body>
+        <div class="container">
+        <h1>Form Registrasi Siswa</h1>
+        <form method="POST" action="proses_register.php">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="no_telepon">Nomor Telepon</label>
+        <input type="text" id="no_telepon" name="no_telepon" required>
+
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat" required></textarea>
+
+        <label for="tingkat_kelas">Tingkat Kelas</label>
+        <select name="tingkat_kelas">
         <option value="7">7</option>
         <option value="8">8</option>
         <option value="9">9</option>
         <option value="10">10</option>
         <option value="11">11</option>
         <option value="12">12</option>
-    </select><br><br>
-    <input type="submit" value="Register">
-    <br>
-</form>
-</body>
-</html>
+        </select><br><br>
+
+        <label for="license_key">License Key</label>
+        <input type="text" id="license_key" name="license_key" required>
+
+        <input type="submit" value="Daftar">
+        </form>
+
+        </div>
+        </body>
+        </html>

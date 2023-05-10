@@ -1,16 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
+<!-- Mirrored from storage.googleapis.com/theme-vessel-items/checking-sites/oddo-2-html/HTML/main/login-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 May 2023 11:06:55 GMT -->
 <head>
-    <title>Form Login Siswa</title>
+    <title>ODDO - Login and Register Form HTML5 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <!-- External CSS libraries -->
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="assets/css/bootstrap.min.css"
+    />
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="assets/fonts/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="assets/fonts/flaticon/font/flaticon.css"
+    />
+
+    <!-- Favicon icon -->
+    <link
+            rel="shortcut icon"
+            href="assets/img/favicon.ico"
+            type="image/x-icon"
+    />
+
+    <!-- Google fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&amp;display=swap"
+            rel="stylesheet"
+    />
+
+    <!-- Custom Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
-<h1>Form Login Siswa</h1>
-<form action="login_proses.php" method="post">
-    <label for="email">Email:</label>
-    <input type="email" name="email" required><br><br>
-    <label for="password">Password:</label>
-    <input type="password" name="password" required><br><br>
-    <input type="submit" value="Login">
-</form>
+<body id="top">
+<div class="page_loader"></div>
+
+<!-- Login 1 section start -->
+<div class="login-1">
+    <div class="container-fluid">
+        <div class="row login-box">
+            <div class="col-lg-6 align-self-center pad-0 form-section">
+                <div class="form-inner">
+                    <a href="login-1.html" class="logo">
+                        <h1>- BIG COURSE - </h1>
+                    </a>
+                    <h3>Login Member Panel <b>BIG COURSE</b></h3>
+<!--                    <div-->
+<!--                            class="alert alert-danger alert-dismissible fade show"-->
+<!--                            role="alert">-->
+<!--&lt;!&ndash;                        <strong>Sorry,</strong> Something went wrong!&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button&ndash;&gt;-->
+<!--&lt;!&ndash;                                type="button"&ndash;&gt;-->
+<!--&lt;!&ndash;                                class="btn-close"&ndash;&gt;-->
+<!--&lt;!&ndash;                                data-bs-dismiss="alert"&ndash;&gt;-->
+<!--&lt;!&ndash;                                aria-label="Close"&ndash;&gt;-->
+<!--&lt;!&ndash;                        ></button>&ndash;&gt;-->
+<!--                    </div>-->
+                    <form action="login_proses.php" method="post">
+                        <div class="form-group position-relative clearfix">
+                            <input
+                                    name="email"
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Alamat Email"
+                                    aria-label="Alamat Email"
+                            />
+                            <div
+                                    class="login-popover login-popover-abs"
+                                    data-bs-toggle="popover"
+                                    data-bs-trigger="hover"
+                                    title="Sticky Notes:"
+                                    data-bs-content="Masukkan Alamat Email yang sudah terdaftar"
+                            >
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                        </div>
+                        <div
+                                class="form-group clearfix position-relative password-wrapper"
+                        >
+                            <input
+                                    name="password"
+                                    type="password"
+                                    class="form-control"
+                                    autocomplete="off"
+                                    placeholder="Password"
+                                    aria-label="Password"
+                            />
+                            <i class="fa fa-eye password-indicator"></i>
+                        </div>
+<!--                        <div class="checkbox form-group clearfix">-->
+<!--&lt;!&ndash;                            <div class="form-check float-start">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <input&ndash;&gt;-->
+<!--&lt;!&ndash;                                        class="form-check-input"&ndash;&gt;-->
+<!--&lt;!&ndash;                                        type="checkbox"&ndash;&gt;-->
+<!--&lt;!&ndash;                                        id="rememberme"&ndash;&gt;-->
+<!--&lt;!&ndash;                                />&ndash;&gt;-->
+<!--&lt;!&ndash;                                <label class="form-check-label" for="rememberme">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    Remember me&ndash;&gt;-->
+<!--&lt;!&ndash;                                </label>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a&ndash;&gt;-->
+<!--&lt;!&ndash;                                    href="forgot-password-1.html"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    class="link-light float-end forgot-password"&ndash;&gt;-->
+<!--&lt;!&ndash;                            >Forgot your password?</a&ndash;&gt;-->
+<!--&lt;!&ndash;                            >&ndash;&gt;-->
+<!--                        </div>-->
+                        <div class="form-group clearfix">
+                            <button
+                                    type="submit"
+                                    value="login"
+                                    class="btn btn-primary btn-lg btn-theme"
+                            >
+                                Login
+                            </button>
+                        </div>
+<!--                        <div class="extra-login clearfix">-->
+<!--                            <span>Or Login With</span>-->
+<!--                        </div>-->
+                    </form>
+<!--                    <div class="clearfix"></div>-->
+<!--                    <div class="social-list clearfix">-->
+<!--                        <div class="icon facebook">-->
+<!--                            <div class="tooltip">Facebook</div>-->
+<!--                            <span><i class="fa fa-facebook"></i></span>-->
+<!--                        </div>-->
+<!--                        <div class="icon twitter">-->
+<!--                            <div class="tooltip">Twitter</div>-->
+<!--                            <span><i class="fa fa-twitter"></i></span>-->
+<!--                        </div>-->
+<!--                        <div class="icon instagram">-->
+<!--                            <div class="tooltip">Google</div>-->
+<!--                            <span><i class="fa fa-google"></i></span>-->
+<!--                        </div>-->
+<!--                        <div class="icon github mr-0">-->
+<!--                            <div class="tooltip">Linkedin</div>-->
+<!--                            <span><i class="fa fa-linkedin"></i></span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <p>
+                        <a href="register.php" class="thembo"> Registrasi Member!</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 pad-0 none-992 bg-img">
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="info">
+                    <div class="animated-text">
+                        <h1>
+                            Welcome
+                            <span
+                            >to<br>
+                    BIG COURSE</span
+                            >
+                        </h1>
+                    </div>
+                    <p>
+                        BIG COURSE adalah sebuah aplikasi video pembelajaran melalui internet yang sangat berguna bagi para pelajar yang ingin mempelajari mata pelajaran seperti matematika, fisika, dan kimia. Aplikasi ini menawarkan guru/mastertutor yang ahli dan berpengalaman di bidangnya, sehingga para pengguna bisa memperoleh pengetahuan secara mendalam dan terstruktur dalam bidang tersebut.</p><br><br>
+
+                    <p>Dalam BIG COURSE, guru/mastertutor yang tergabung di dalamnya memiliki latar belakang pendidikan yang sangat kuat di bidang matematika, fisika, dan kimia. Mereka juga memiliki pengalaman mengajar yang luas, baik di tingkat sekolah maupun di level perguruan tinggi. Selain itu, aplikasi ini juga menyediakan beragam fitur menarik seperti tanya jawab langsung dengan guru/mastertutor melalui chat, diskusi kelompok, dan video pembelajaran yang dapat diakses kapan saja dan di mana saja. Dengan begitu, para pengguna dapat memperoleh bimbingan yang terpersonalisasi dan sesuai dengan kebutuhan belajar masing-masing individu.</p>
+
+                    <p> </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Login 1 section end -->
+
+<!-- External JS libraries -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="assets/js/app.js"></script>
+<!-- Custom JS Script -->
 </body>
+
+<!-- Mirrored from storage.googleapis.com/theme-vessel-items/checking-sites/oddo-2-html/HTML/main/login-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 May 2023 11:06:56 GMT -->
 </html>

@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit;
     } else {
         // jika email atau password tidak cocok, tampilkan pesan error
-        echo "Email atau password salah!";
+        header('Location: wrongdatalogin.php');
     }
 }
 

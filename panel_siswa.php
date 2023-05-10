@@ -19,7 +19,7 @@ if (isset($_GET['tingkat_kelas'])) {
     $tingkat_kelas = $_GET['tingkat_kelas'];
 } else {
     // jika tingkat_kelas tidak tersedia, tampilkan pesan error
-    echo "Tingkat kelas tidak tersedia!";
+    header('Location: login.html');
     exit;
 }
 
