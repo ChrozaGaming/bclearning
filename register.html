@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Registrasi Siswa</title>
+</head>
+<body>
+<h1>Form Registrasi Siswa</h1>
+<form action="proses_register.php" method="post">
+    <label for="nama">Nama:</label>
+    <input type="text" name="nama" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" required><br><br>
+    <label for="no_telepon">No. Telepon:</label>
+    <input type="text" name="no_telepon"><br><br>
+    <label for="alamat">Alamat:</label>
+    <textarea name="alamat"></textarea><br><br>
+    <label for="tingkat_kelas">Tingkat Kelas:</label>
+    <select name="tingkat_kelas">
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select><br><br>
+    <input type="submit" value="Register">
+    <br>
+</form>
+</body>
+</html>
